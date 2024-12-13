@@ -62,8 +62,8 @@ const Header: React.FC<HeaderProps> = ({
             className="
               lg:hidden
               block
-              text-sky-500
-              hover:text-sky-600
+              text-orange-500
+              hover:text-orange-600
               transition
               cursor-pointer
             "
@@ -95,9 +95,9 @@ const Header: React.FC<HeaderProps> = ({
           size={32}
           onClick={() => setDrawerOpen(true)}
           className="
-            text-sky-500
+            text-orange-500
             cursor-pointer
-            hover:text-sky-600
+            hover:text-orange-600
             transition
           "
         />

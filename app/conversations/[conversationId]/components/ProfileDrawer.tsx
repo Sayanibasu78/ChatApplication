@@ -145,7 +145,7 @@ const ProfileDrawer: React.FC<ProfileDrawerProps> = ({
                                 hover:text-gray-500
                                 focus:outline-none
                                 focus:ring-2
-                                focus:ring-sky-500
+                                focus:ring-orange-500
                                 focus:ring-offset-2
                               "
                             >
