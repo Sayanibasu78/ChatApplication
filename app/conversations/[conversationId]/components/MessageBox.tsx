@@ -32,6 +32,8 @@ const MessageBox: React.FC<MessageBoxProps> = ({
     isOwn && "justify-end"
   );
 
+  
+
   const avatar = clsx(isOwn && "order-2");
 
   const body = clsx(
@@ -59,6 +61,7 @@ const MessageBox: React.FC<MessageBoxProps> = ({
             {format(new Date(data.createdAt), 'p')}
           </div>
         </div>
+        
         <div className={message}>
           <ImageModal
             src={data.image}
@@ -83,7 +86,9 @@ const MessageBox: React.FC<MessageBoxProps> = ({
           ) : (
             <div>{data.body}</div>
           )}
+          
         </div>
+        
         {isLast && isOwn && seenList.length > 0 && (
           <div
             className="

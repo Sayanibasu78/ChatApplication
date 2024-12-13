@@ -1,8 +1,24 @@
+"use client";
+
 import Image from "next/image";
 
 import AuthForm from "./components/AuthForm";
+import { useEffect, useState } from "react";
+
+
 
 export default function Home() {
+
+  const [isClient, setIsClient] = useState(false)
+ 
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
+
+  if(!isClient) {
+    return null;
+  }
+  
   return (
     <div
       className="
